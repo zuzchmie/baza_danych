@@ -1,0 +1,16 @@
+ID  IMIE    NAZWISKO    DATA_ZATRUDNIENIA   STANOWISKO  WYNAGRODZENIE
+1   Marek   Nowak       2020-01-01      Direct_Creative_Supervisor  30000
+2   Jan     Kowalski    2010-06-01      Investor_Metrics_Supervisor 30000
+3   Anna    Iksinska    2015-03-01      Interactive_Factors_Producer    25000
+4   Magdalena Nowak     2018-10-01      Relational_Quality_Facilitator  27000
+5   Tomasz  Wisniewski  2019-04-01      Relational_Security_Technician  20000
+6   Katarzyna   Wojcik  2023-02-01      Global_Creative_Coordinator 35000 
+7   Grzegorz    Kowalczyk   2022-09-01  Human_Interactions_Planner  22000
+8   Szymon  Kaminski    2022-09-01  Corporate_Configuration_Engineer    25000
+9   Iwona   Lewandowska 2019-06-01  Legacy_Resonance_Officer    28000
+10  Monika  Zielinska   2017-11-01  Senior_Brand_Manager    30000
+11  Piotr   Szymanski   2012-12-01  Chief_Directives_Engineer   32000
+12  Pawel   Kowalski    2014-04-01  Corporate_Applications_Consultant   28000
+13  Krystyna    Szymanska   2017-05-01  National_Configuration_Administrator    22000
+14  Aleksandra  Wozniak     2018-10-01  Investor_Intranet_Architect 27000
+15  Andrzej Nowak   2022-01-01  Corporate_Team_Associate    20000
