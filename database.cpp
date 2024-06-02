@@ -315,20 +315,49 @@ public:
 
 int main()
 {
-    std::string surname;
-    BazaKlientow client_base("klienci.dat");
-    client_base.GetData();
-    std::cout << "--------------------------KLIENCI------------------------------\n\n";
-    client_base.Print();
-    std::cout << "Wpisz nazwisko osoby ktorej dane chcesz wyszukac: ";
-    std::cin >> surname;
-    client_base.Find(surname);
+    int choice;
+    std::cout << "To jest program obslugujacy bazy danych klientow i pracownikow" << std::endl;
+    while (1)
+    {
 
-    BazaPracownikow worker_base("pracownicy.dat");
-    worker_base.GetData();
-    std::cout << "-------------------------PRACOWNICY----------------------------\n\n";
-    worker_base.Print();
-    std::cout << "Wpisz nazwisko osoby ktorej dane chcesz wyszukac: ";
-    std::cin >> surname;
-    worker_base.Find(surname);
+        std::cout << "Wybierz numer dla danej akcji: " << std::endl;
+        std::cout << "1. Wypis danych klientow" << std::endl;
+        std::cout << "2. Wypis danych pracownikow" << std::endl;
+        std::cout << "3. Szukanie w osoby w bazie klientow" << std::endl;
+        std::cout << "4. Szukanie w osoby w bazie pracownikow" << std::endl;
+        std::cout << "-1. Zakoncz program" << std::endl;
+
+        std::cout << "Twoj wybor: ";
+        std::cin >> choice;
+        if (choice == -1)
+            break;
+        std::string surname;
+        BazaKlientow client_base("klienci.dat");
+        client_base.GetData();
+        BazaPracownikow worker_base("pracownicy.dat");
+        worker_base.GetData();
+        if (choice == 1)
+        {
+            std::cout << "--------------------------KLIENCI------------------------------\n\n";
+            client_base.Print();
+        }
+
+        if (choice == 3)
+        {
+            std::cout << "Wpisz nazwisko osoby ktorej dane chcesz wyszukac: ";
+            std::cin >> surname;
+            client_base.Find(surname);
+        }
+        if (choice == 2)
+        {
+            std::cout << "-------------------------PRACOWNICY----------------------------\n\n";
+            worker_base.Print();
+        }
+        if (choice == 4)
+        {
+            std::cout << "Wpisz nazwisko osoby ktorej dane chcesz wyszukac: ";
+            std::cin >> surname;
+            worker_base.Find(surname);
+        }
+    }
 }
